@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #center {
+            width: 600px;
+            height: 600px;
+            border: 1px solid #333;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #blue,#red,#green {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+
+        #blue {
+            background-color: dodgerblue;
+            bottom: 200px;
+            left: 200px;
+        }
+
+        #red {
+            background-color: crimson;
+            left: 100px;
+            bottom: 300px;
+        }
+
+        #green {
+            background-color: forestgreen;
+            left: 300px;
+            bottom: 100px;
+        }
+
+        #blue:hover {
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="center">
+        <div id="blue"></div>
+        <div id="red"></div>
+        <div id="green"></div>
+    </div>
+</body>
+
+</html>
