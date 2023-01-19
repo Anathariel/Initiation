@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#left-arrow, #right-arrow {
+    height: 400px;
+    line-height: 400px;
+    padding: 0 10px;
+    opacity: .5;
+    transition: all .5s ease;
+}
+
+#left-arrow:hover, #right-arrow:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#window-slider {
+    overflow: hidden;
+    width: 500px;
+    height: 400px;
+}
+#list-slide {
+    display: flex;
+}

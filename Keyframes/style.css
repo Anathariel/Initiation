@@ -1,0 +1,28 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*Keyframes */
+#spin {
+    position: relative;
+    animation:
+        move .5s linear infinite;
+    -webkit-animation: move .5s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0deg);
+        left: 0;
+        top: 0;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        left: 1500px;
+        top: 200px;
+    }
+}

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url(./Cinzel/static/Cinzel-Regular.ttf);
+}
+
+h1 {
+    font-family: 'Cinzel';
+}
+
+p {
+    font-family: 'Passions Conflict', cursive;
+}
+
+/*jjjj*/

@@ -1,0 +1,37 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-bottom: 50px;
+}
+
+/* 
+Un premier avec une transition de survole à 2s  avec un fond jaune et le second une transition avec le clic avec un fond rouge.
+En utilisant la classe forme-carre3, ajoutez un effet de transition lors du survol du carré avec les critères suivants :
+    Durée de la transition : 2 secondes ;
+    Délai avant le début de la transition : 0,5 seconde ;
+    Rythme de transition : régulier (linéaire).;
+    background vert et des bordures rouge 2px solid */
+
+.forme-carre {
+    transition-duration: 2s;
+}
+
+.forme-carre:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.forme-carre2:active {
+    background-color: crimson;
+}
+
+.forme-carre3 {
+    transition: 2s;
+    transition-delay: .5s;
+    transition-timing-function: linear;
+}
+
+.forme-carre3:hover {
+    background-color: lightgreen;
+    border: 2px solid crimson;
+}
