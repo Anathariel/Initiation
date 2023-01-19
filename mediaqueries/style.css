@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.row-limit-size {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header {
+    overflow: auto;
+    box-shadow: 0 1px 3px #e71f73;
+}
+
+#logo {
+    background-color: #e71f73;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    height: 50px;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    float: left;
+}
+
+/*Main Menu*/
+
+#burger,
+#close {
+    display: none;
+}
+
+#main-menu {
+    float: right;
+}
+
+#main-menu.active {
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    #main-menu {
+        opacity: 0;
+        position: absolute;
+        background-color: lightpink;
+        animation: mymove linear 3s;
+    }
+
+    @keyframes mymove {
+        0% {
+            transform: translateY(-150%);
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+    }
+
+    #main-menu.active {
+        width: 100%;
+        height: 100vh;
+        opacity: 100%;
+    }
+
+    #main-menu>ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+    }
+
+    #burger {
+        display: block;
+        float: right;
+        margin: 10px 10px 0 0;
+        cursor: pointer;
+    }
+
+    #close {
+        display: block;
+        align-self: right;
+        margin: 10px;
+        cursor: pointer;
+        position: absolute;
+        left: 85%;
+        top: 1%;
+        color: #e71f73;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+    }
+}
+
+#main-menu>ul {
+    display: flex;
+}
+
+#main-menu>ul>li {
+    list-style: none;
+}
+
+
+
+#main-menu>ul>li>a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    color: #e71f73;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all .5s ease;
+}
+
+/*RWD code*/
+@media screen and (max-width: 700px) {
+    #main-menu>ul>li>a {
+        padding: 0 5px;
+        font-size: .8rem;
+    }
+}
+
+#main-menu>ul>li:hover>a {
+    color: #fff;
+    background-color: #e71f73;
+}
