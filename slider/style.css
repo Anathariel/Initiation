@@ -29,4 +29,5 @@
 }
 #list-slide {
     display: flex;
+    transition: all .5s ease;
 }
